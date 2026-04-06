@@ -1,0 +1,12 @@
+# Environment
+.env
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+logs/
+
+# Runtime
+*.pid
