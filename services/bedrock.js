@@ -14,20 +14,58 @@ const client = new BedrockRuntimeClient({
  * Extend as Anthropic releases new models on Bedrock.
  */
 export const ALLOWED_MODELS = new Set([
-  // Cross-region inference profiles (required for newer models)
-  'us.anthropic.claude-3-7-sonnet-20250219-v1:0',
-  'us.anthropic.claude-3-5-sonnet-20241022-v2:0',
-  'us.anthropic.claude-3-5-haiku-20241022-v1:0',
-  'us.anthropic.claude-3-opus-20240229-v1:0',
-  'eu.anthropic.claude-3-7-sonnet-20250219-v1:0',
-  'eu.anthropic.claude-3-5-sonnet-20241022-v2:0',
-  // Legacy on-demand model IDs (still work for older models)
+  // ── Claude 4.6 ────────────────────────────────────────────────────────────
+  'anthropic.claude-sonnet-4-6-20251101-v1:0',
+  'us.anthropic.claude-sonnet-4-6-20251101-v1:0',
+  'eu.anthropic.claude-sonnet-4-6-20251101-v1:0',
+  'ap.anthropic.claude-sonnet-4-6-20251101-v1:0',
+  'anthropic.claude-opus-4-6-20251101-v1:0',
+  'us.anthropic.claude-opus-4-6-20251101-v1:0',
+  'eu.anthropic.claude-opus-4-6-20251101-v1:0',
+
+  // ── Claude 4.5 ────────────────────────────────────────────────────────────
+  'anthropic.claude-sonnet-4-5-20251001-v1:0',
+  'us.anthropic.claude-sonnet-4-5-20251001-v1:0',
+  'eu.anthropic.claude-sonnet-4-5-20251001-v1:0',
+  'ap.anthropic.claude-sonnet-4-5-20251001-v1:0',
+  'anthropic.claude-haiku-4-5-20251001-v1:0',
+  'us.anthropic.claude-haiku-4-5-20251001-v1:0',
+  'eu.anthropic.claude-haiku-4-5-20251001-v1:0',
+
+  // ── Claude 4 ──────────────────────────────────────────────────────────────
+  'anthropic.claude-sonnet-4-20250514-v1:0',
+  'us.anthropic.claude-sonnet-4-20250514-v1:0',
+  'eu.anthropic.claude-sonnet-4-20250514-v1:0',
+  'ap.anthropic.claude-sonnet-4-20250514-v1:0',
+  'anthropic.claude-opus-4-20250514-v1:0',
+  'us.anthropic.claude-opus-4-20250514-v1:0',
+  'eu.anthropic.claude-opus-4-20250514-v1:0',
+
+  // ── Claude 3.7 ────────────────────────────────────────────────────────────
   'anthropic.claude-3-7-sonnet-20250219-v1:0',
+  'us.anthropic.claude-3-7-sonnet-20250219-v1:0',
+  'eu.anthropic.claude-3-7-sonnet-20250219-v1:0',
+  'ap.anthropic.claude-3-7-sonnet-20250219-v1:0',
+
+  // ── Claude 3.5 ────────────────────────────────────────────────────────────
   'anthropic.claude-3-5-sonnet-20241022-v2:0',
+  'us.anthropic.claude-3-5-sonnet-20241022-v2:0',
+  'eu.anthropic.claude-3-5-sonnet-20241022-v2:0',
+  'ap.anthropic.claude-3-5-sonnet-20241022-v2:0',
+  'anthropic.claude-3-5-sonnet-20240620-v1:0',
+  'us.anthropic.claude-3-5-sonnet-20240620-v1:0',
   'anthropic.claude-3-5-haiku-20241022-v1:0',
+  'us.anthropic.claude-3-5-haiku-20241022-v1:0',
+  'eu.anthropic.claude-3-5-haiku-20241022-v1:0',
+  'ap.anthropic.claude-3-5-haiku-20241022-v1:0',
+
+  // ── Claude 3 ──────────────────────────────────────────────────────────────
   'anthropic.claude-3-opus-20240229-v1:0',
+  'us.anthropic.claude-3-opus-20240229-v1:0',
   'anthropic.claude-3-sonnet-20240229-v1:0',
   'anthropic.claude-3-haiku-20240307-v1:0',
+
+  // ── Claude 2 / Instant ────────────────────────────────────────────────────
   'anthropic.claude-instant-v1',
 ]);
 
